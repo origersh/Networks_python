@@ -1,11 +1,11 @@
 """
-Run this server from powershell and thatn run call-response.py file from
+Run this server from powershell and than run the client file from
 another powershell to make an echo response from the server
 """
 import socket
 
 server_socket = socket.socket()
-server_socket.bind(('0.0.0.0', 8820))
+server_socket.bind(('0.0.0.0', 8820)) # make sure to specify this port - 8820 in the connection request in the client file
 server_socket.listen(1) # 1 means how many connections the server can manage
 (client_socket, client_address) = server_socket.accept()
 
