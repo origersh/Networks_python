@@ -1,5 +1,5 @@
 """
-Run this server from powershell and thatn run call-response.py file from
+Run this server from powershell and than run the call-response file from
 another powershell to make an echo response from the server
 """
 import socket
