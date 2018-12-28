@@ -10,6 +10,8 @@ while True:
     if input.lower() == 'exit':
         client_socket.send('exit')
         break
+    if input.lower() == '':
+        client_socket.send('Enter')
     # else - send message to the server
     client_socket.send(input)
 
@@ -17,5 +19,3 @@ while True:
     print('The server sent: ' + data)
 
 client_socket.close()
-
-# TODO: Find a way to avoid '\n' crash - when sending an Enter as input
