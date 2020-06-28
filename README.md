@@ -1,4 +1,4 @@
-﻿# Networks-python
+# Server and Client
 A basic client-server connection and communication example, made with python
 ##### `Author:` origersh
 ##### `Langage:` Python (3.8)
