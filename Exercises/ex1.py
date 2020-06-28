@@ -12,7 +12,7 @@ print('The server sent: ' + data) #                                        | py 
 my_socket.close() # closing the connection
 
 # --------------------- // interesting notes // ------------------ #
-# When running with python 3 - my_socket.send('String') raise an error saying that we must send a byte-obj
+# When running with python 3: `my_socket.send('String')` fails with an error saying that we must send a byte-obj
     # that means that everthing we send needs to be converted to bytes (using b'String' for exm.),
     # and everything we receive needs to be decoded (using .decode('utf-8') for exm.)
 # However when compiling with python 2 - my_socket.send('String') does NOT raise an error
